@@ -1,0 +1,328 @@
+@font-face {
+  font-family: mantap;
+  src: url(font/Simply\ Rounded.ttf);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+body {
+  margin: 0px;
+  background-color: #000;
+  color: #fff;
+  font-family: 'mantap';
+  scroll-behavior: smooth;
+}
+
+.container {
+  align-items: center;
+}
+
+.nav {
+  height: 50px;
+  width: 100%;
+  box-shadow: 7px #CD1818;
+  background-color: #000;
+  position: fixed;
+  z-index: 1000;
+}
+
+.nav>.nav-header {
+  display: inline;
+}
+
+.nav>.nav-header>.nav-title {
+  display: inline-block;
+  font-size: 22px;
+  color: #fff;
+  margin-left: 20px;
+  padding: 10px 10px 10px 10px;
+}
+
+.nav>.nav-btn {
+  display: none;
+}
+
+.nav>.nav-links {
+  display: inline;
+  float: right;
+  font-size: 18px;
+}
+
+.nav>.nav-links>a {
+  display: inline-block;
+  padding: 13px 10px 13px 10px;
+  text-decoration: none;
+  color: #efefef;
+}
+
+.nav>.nav-links>a:hover {
+  transition: .4s;
+  background-color: #CD1818;
+}
+
+.nav>#nav-check {
+  display: none;
+}
+
+/* .home {
+  border: solid 1px white;
+} */
+
+#home {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 60% 40%;
+  grid-template-rows: 1fr;
+  background-color: black;
+  /*parallax efek start */
+  background-image: url(https://pixabay.com/get/gcce45d4c524dafdea20af3bf50beda679d5dfab19a27912ace01f275525f5de576cbb531bb11a17993a17c03e429912e56df9d19043367adf602cec5bc32aa6c13e0340ed0fda9025e55c97c736a874c_1280.jpg);
+  min-height: 500px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  /*parallax efek end*/
+  padding-bottom: 200px;
+}
+
+.bungkustext {
+  width: fit-content;
+  margin: 50px auto;
+  color: #eee;
+}
+
+.textjudul {
+  margin-top: 60px;
+  font-size: 40px;
+}
+
+.btn1 {
+
+  margin: 20px 0;
+}
+
+.btn1 a {
+  color: #000;
+  border-radius: 2px;
+  background-color: #eee;
+  width: max-content;
+  padding: 10px 20px;
+}
+
+.btn1 a:hover {
+  transition: .4s;
+  color: #fff;
+  background-color: #CD1818;
+}
+
+.judul {
+  font-size: 100px;
+}
+
+.gambar1 {
+  width: 400px;
+  margin-top: 18%;
+
+}
+
+.gambar1 .isigambar {
+  width: 400px;
+  border-radius: 40%;
+
+}
+
+.about {
+  margin: 30px;
+  padding: 50px 10px;
+
+}
+
+#about {
+  display: grid;
+  grid-template-columns: 20% 80%;
+
+}
+
+.img-about img {
+  width: 200px;
+  box-shadow: 7px 7px #CD1818;
+}
+
+.tentang {
+  text-align: left;
+  font-size: 60px;
+}
+
+.deskripsi1 {
+  margin-top: 20px;
+}
+
+.satu {
+  width: 100px;
+}
+
+.cv {
+  margin-top: 20px;
+}
+
+.cv a {
+  padding: 10px 10px;
+  background-color: #CD1818;
+  color: #fff;
+  width: 90px;
+}
+
+.cv a:hover {
+  background-color: #a71818;
+  transition: .4s;
+}
+
+.portofolio #portofolio {
+  margin: 20px 0;
+  background-image: url(https://rpl.upi.edu/wp-content/uploads/2021/07/multi-1200x600.jpg);
+  min-height: 500px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.judulPr {
+  margin: 20px auto;
+  padding-top: 40px;
+}
+
+.pro {
+  text-align: center;
+  font-size: 50px;
+}
+
+.dua {
+  width: 100px;
+  margin: auto;
+}
+
+.list {
+  text-align: center;
+  margin: 20px;
+}
+
+ul li {
+  list-style: none;
+  display: inline;
+  margin: 26px;
+  cursor: pointer;
+}
+
+
+ul li a:hover {
+  background-color: #a71818;
+}
+
+.project {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 1fr;
+}
+
+.img-project1 img {
+  width: 500px;
+}
+
+@media (max-width:600px) {
+  .nav>.nav-btn {
+    display: inline-block;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+  }
+
+  .nav>.nav-btn>label {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    padding: 13px;
+  }
+
+  .nav>.nav-btn>label:hover,
+  .nav #nav-check:checked~.nav-btn>label {
+    background-color: rgba(0, 0, 0, 0.3);
+  }
+
+  .nav>.nav-btn>label>span {
+    display: block;
+    width: 25px;
+    height: 10px;
+    border-top: 2px solid #eee;
+  }
+
+  .nav>.nav-links {
+    position: absolute;
+    display: block;
+    width: 100%;
+    background-color: #201c1c;
+    height: 0px;
+    transition: all 0.3s ease-in;
+    overflow-y: hidden;
+    top: 50px;
+    left: 0px;
+  }
+
+  .nav>.nav-links>a {
+    display: block;
+    width: 100%;
+  }
+
+  .nav>#nav-check:not(:checked)~.nav-links {
+    height: 0px;
+  }
+
+  .nav>#nav-check:checked~.nav-links {
+    height: calc(40vh - 50px);
+    overflow-y: auto;
+  }
+
+  #home {
+    width: 100%;
+    height: 100vh;
+    background: url(https://pixabay.com/get/gcce45d4c524dafdea20af3bf50beda679d5dfab19a27912ace01f275525f5de576cbb531bb11a17993a17c03e429912e56df9d19043367adf602cec5bc32aa6c13e0340ed0fda9025e55c97c736a874c_1280.jpg);
+    min-height: 500px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  #about {
+
+    grid-template-columns: repeat(1, 2fr);
+  }
+
+  .bungkustext {
+
+    margin: 10vh 5vh;
+  }
+
+  .textjudul {
+    font-size: 100%;
+  }
+
+  .judul {
+    font-size: 40px;
+  }
+
+  .isigambar {
+    display: none;
+  }
+
+  .btn1 {
+    margin-top: 100px;
+  }
+}
